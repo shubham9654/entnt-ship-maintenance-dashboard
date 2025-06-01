@@ -17,4 +17,4 @@ export const canUpdateJobStatus = (user, job) => {
     return false;
 };
 
-export const canViewAll = (user) => !!user; // Any logged-in user can view
+export const canViewAll = (user) => !!user;

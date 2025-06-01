@@ -6,7 +6,7 @@ This project is a frontend-only Ship Maintenance Dashboard developed for the ENT
 
 ## Deployed Application Link
 
-*   **Link:** [Your Deployed Link Here - e.g., Vercel, Netlify]
+*   **Link:** https://entnt-ship-maintenance-dashboard.vercel.app/
     *   *Note: You will need to deploy this project to a service like Vercel, Netlify, or GitHub Pages and replace this placeholder.*
 
 ## Features Implemented

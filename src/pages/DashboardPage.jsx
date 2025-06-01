@@ -2,7 +2,6 @@ import React from 'react';
 import { useData } from '../contexts/DataContext';
 import { Link } from 'react-router-dom';
 import { isOverdue } from '../utils/helpers';
-// Placeholder for charts - you'd import from 'recharts' or similar
 // import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const KPICard = ({ title, value, linkTo, linkText = "View Details" }) => (
@@ -13,10 +12,7 @@ const KPICard = ({ title, value, linkTo, linkText = "View Details" }) => (
   </div>
 );
 
-// Placeholder Chart Component
 const SimpleBarChart = ({ data, dataKey, xAxisKey, title }) => {
-    // This is where you'd use Recharts or similar
-    // For now, a simple placeholder
     return (
         <div className="bg-white p-6 rounded-lg shadow-lg min-h-[300px]">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">{title}</h3>
