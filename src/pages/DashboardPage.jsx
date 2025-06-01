@@ -2,7 +2,7 @@ import React from 'react';
 import { useData } from '../contexts/DataContext';
 import { Link } from 'react-router-dom';
 import { isOverdue } from '../utils/helpers';
-// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const KPICard = ({ title, value, linkTo, linkText = "View Details" }) => (
   <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -17,7 +17,7 @@ const SimpleBarChart = ({ data, dataKey, xAxisKey, title }) => {
         <div className="bg-white p-6 rounded-lg shadow-lg min-h-[300px]">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">{title}</h3>
             <div className="flex items-center justify-center h-full text-gray-400">
-                {/* <ResponsiveContainer width="100%" height={250}>
+                <ResponsiveContainer width="100%" height={350}>
                     <BarChart data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey={xAxisKey} />
@@ -26,9 +26,8 @@ const SimpleBarChart = ({ data, dataKey, xAxisKey, title }) => {
                         <Legend />
                         <Bar dataKey={dataKey} fill="#8884d8" />
                     </BarChart>
-                </ResponsiveContainer> */}
-                Chart Placeholder for "{title}"
-                {data && data.length > 0 ? ` (Data available for ${dataKey})` : '(No data for chart)'}
+                </ResponsiveContainer>
+                {/* Chart Placeholder for "{title}" */}
             </div>
         </div>
     );
