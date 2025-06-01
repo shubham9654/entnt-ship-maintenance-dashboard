@@ -86,8 +86,8 @@ const DashboardPage = () => {
       <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-semibold text-gray-700 mb-4">Quick Access</h2>
         <div className="space-x-4">
-            <Link to="/ships/new" className="btn btn-primary">Add New Ship</Link>
-            <Link to="/jobs/new" className="btn btn-primary">Create New Job</Link>
+            <Link to="/ships" className="btn btn-primary">Add New Ship</Link>
+            <Link to="/jobs" className="btn btn-primary">Create New Job</Link>
         </div>
       </div>
 
